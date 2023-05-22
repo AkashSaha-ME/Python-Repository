@@ -1,1 +1,35 @@
+# Discount For Donuts
 
+price =int(input(" Please Tell Us The Price Of A Single Donut You Bought : "))
+
+amount=int(input(" Please Let Us Know How Many Pieces You Want To Buy Today : "))
+
+cost=int(price*amount)
+
+if cost >= 5000:
+
+    dct=(cost*.1)
+
+    print("You Got A 10% Discount And The Final Price Is : ", int (cost-dct))
+
+   
+
+else:
+
+    if cost >= 3000:
+
+        dct=(cost*.03)
+
+        print("You Got A 10% Discount And The Final Price Is : ",int (cost-dct))
+
+    else:
+
+        if cost >= 1000:
+
+            dct=(cost*0.01)
+
+            print("You Got A 10% Discount And The Final  Is : ",int (cost-dct))
+
+        else:
+
+            print("Sorry We Couldn't Give Any Discount Today, Your Total Bill Will Be", cost)
